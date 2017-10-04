@@ -1,27 +1,28 @@
-# AngularCliLibraryGeneratorExample
+## This application was generated using [@angular/cli](https://www.npmjs.com/package/@angular/cli) and [nglg](https://www.npmjs.com/package/angular-cli-library-generator):
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
+```
+npm install -g @angular/cli
+npm install -g angular-cli-library-generator
+ng new angular-cli-library-generator-example --style scss --prefix mc
+```
 
-## Development server
+@angular/cli options | description
+------------ | -------------
+--style scss | nglg is optimized to work with scss
+--prefix mc  | this is the prefix used in all component' selectors. In this case mc means `my company`. Use one that works well for your company. Otherwise the @angular/cli default is `app`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Generating a component and documentation with nglg
+```
+nglg component my-first-component-name
+```
+or if you prefer
+```
+nglg c my-first-component-name
+```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## How to config nglg to work with @angular/cli
+It's super easy to do. 
+  1. Just import NglgDemoAppModule inside AppModule
+  2. Change app.component.html to only have `<nglg-demo-app></nglg-demo-app>`
+  3. Add to styles.scss the following `@import "app/nglg/nglg";`
+  4. It's done! For an example, please refer to the [config commit](https://github.com/bmvantunes/angular-cli-library-generator-example/commit/e89390dd8493ca83f6c9fe99833a3ad34c3768e8)
