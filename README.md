@@ -1,3 +1,5 @@
+[![Greenkeeper badge](https://badges.greenkeeper.io/bmvantunes/angular-cli-library-generator-example.svg)](https://greenkeeper.io/)
+
 ## This application was generated using [@angular/cli](https://www.npmjs.com/package/@angular/cli) and [nglg](https://www.npmjs.com/package/angular-cli-library-generator):
 
 ```
