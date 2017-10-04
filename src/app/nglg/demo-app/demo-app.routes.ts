@@ -13,6 +13,7 @@
 /* tslint:disable */
 export const ROUTES = [
   { path: 'my-first-test', loadChildren: '../../components/my-first-test/my-first-test-demo#MyFirstTestDemoModule' },
+  { path: 'my-fourth-test', loadChildren: '../../components/my-fourth-test/my-fourth-test-demo#MyFourthTestDemoModule' },
   { path: 'my-second-test', loadChildren: '../../components/my-second-test/my-second-test-demo#MySecondTestDemoModule' },
   { path: 'my-third-test', loadChildren: '../../components/my-third-test/my-third-test-demo#MyThirdTestDemoModule' }
 ];
