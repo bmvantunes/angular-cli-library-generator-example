@@ -12,6 +12,7 @@
 
 /* tslint:disable */
 export const ROUTES = [
-  { path: 'my-first-test', loadChildren: '../../components/my-first-test/my-first-test-demo#MyFirstTestDemoModule' }
+  { path: 'my-first-test', loadChildren: '../../components/my-first-test/my-first-test-demo#MyFirstTestDemoModule' },
+  { path: 'my-second-test', loadChildren: '../../components/my-second-test/my-second-test-demo#MySecondTestDemoModule' }
 ];
 /* tslint:enable */
