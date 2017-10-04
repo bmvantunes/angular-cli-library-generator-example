@@ -11,3 +11,6 @@
  ***************************************************************/
 
 export * from './my-first-test';
+export * from './my-fourth-test';
+export * from './my-second-test';
+export * from './my-third-test';
